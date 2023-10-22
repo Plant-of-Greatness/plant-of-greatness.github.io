@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 	<head>
-		<title>Home</title>
+		<title>Games</title>
 		<link rel="shortcut icon" href="Favicon-N.png">
 			<div class="header">
 			<a href="index.html" style="position: relative">
@@ -14,17 +14,17 @@
 			</a>
 		</div>
 		<script>
-			window.history.pushState({}, "", "/games");
+			//window.history.pushState({}, "", "/games");
 			let currentDate = new Date();
 			let month = currentDate.getMonth() + 1;
 			let day = currentDate.getDate();
 	
-			if (month === 10) { 
+			if (month === 100) { 
 				document.querySelector('body').style.background = '#2e0600';
 				document.querySelector('body').style.color = '#c74c00';
 				document.getElementById('headerImage').src = "Haloween.png";
 	
-			} else if (month === 12) {
+			} else if (month === 120) {
 				document.querySelector('body').style.background = '#001010';
 				document.querySelector('body').style.color = '#00d0d0';
 				document.getElementById('headerImage').src = "Christmas.png";			
@@ -34,30 +34,46 @@
 				document.getElementById('headerImage').src = "Normal.png";				
 			}
 		</script>
-				<style>
+		<style>
 			a {
 			font-size: 24px;
 			text-decoration: none;
 			}
+			h2 {
+			text-align: left;
+			}
 			h3 {
-			text-align: center
+			text-align: left;
+			}
+			iframe {
+			align: left;
 			}
 			p {
-			text-align: center;
-			font-size: 14px;
+			float: right;
+			width: calc(100% - 220px);
 			}
+
 		</style>
 	</head>
 	<body>
-		<p>
-			Here is a list of the games I have made and that I am currently making
-		</p>
 		<h3>The Legend of Org</h3>
-		<iframe frameborder="0" src="https://itch.io/embed/1718123?bg_color=000000&amp;fg_color=0484d1&amp;link_color=327345&amp;border_color=333333" width="208" height="167"><a href="https://terra-greatness.itch.io/the-legend-of-org">The Legend of Org - v1.5. by Terra Greatness</a></iframe>
+			<iframe frameborder="0" src="https://itch.io/embed/1718123?bg_color=000000&amp;fg_color=0484d1&amp;link_color=327345&amp;border_color=333333" width="208" height="167">
+			<a href="https://terra-greatness.itch.io/the-legend-of-org">The Legend of Org - v1.5. by Terra Greatness</a></iframe>
+			<p>A fast-paced metriodvania where you are not necessarily the main character, that boasts with rich lore, a simulated ecosystem of an interlocking chain of robots and procedural animation for a more natural feel. All made in Godot 4 to prove a point. <br> <br>
+
+			You are a Cortempris Neuronrunner, a small and crafty robot that has recently been infected with a viral entity known as Orgonin. Your job is whatever you decide it to be, will you serve one of the members of the Pantheon? Will you follow your instincts, where ever it leads? Or will you descend into great depths to release an ancient evil?
+</p>
 		<h3>Thorn: The Knight of the Fifteenth City</h3>
-		<iframe frameborder="0" src="https://itch.io/embed/2167864?bg_color=000000&amp;fg_color=0fbd8c&amp;link_color=575e75&amp;border_color=5d9bf2" width="208" height="167"><a href="https://terra-greatness.itch.io/thorn-knight">Thorn: The Knight of the Fifteenth City by Terra Greatness</a></iframe>
+			<iframe frameborder="0" src="https://itch.io/embed/2167864?bg_color=000000&amp;fg_color=0fbd8c&amp;link_color=575e75&amp;border_color=5d9bf2" width="208" height="167">
+			<a href="https://terra-greatness.itch.io/thorn-knight">Thorn: The Knight of the Fifteenth City by Terra Greatness</a></iframe>
+			<p>A small, more traditional metriodvania with fast-paced, adrenaline driven combat with a strange and enticing world and a retro style <br> <br>
+
+			You are simply known as Thorn, the knight and champion of the City of Thorns a hidden city, tucked away in a forgotten corner of the kingdom. Your city has waged war on the Kingdom of Narkhir. It is your job to defeat the thirteen Knights and finally King Nebloqi. Are you up for the challenge?
+</p>
 		<h2>Game Jam Entries</h2>
-		<h3>GMTK 2023: Public Program Execution</h3>
-		<iframe frameborder="0" src="https://itch.io/embed/2161489?dark=true" width="208" height="167"><a href="https://terra-greatness.itch.io/public-program-execution">Public Program Execution by Terra Greatness</a></iframe>
+			<h3>GMTK 2023: Public Program Execution</h3>
+				<iframe frameborder="0" src="https://itch.io/embed/2161489?dark=true" width="208" height="167">
+				<a href="https://terra-greatness.itch.io/public-program-execution">Public Program Execution by Terra Greatness</a></iframe>
+				<p>Your paragraph text goes here.</p>
 	</body>
 </html>
