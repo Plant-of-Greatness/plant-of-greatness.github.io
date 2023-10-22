@@ -1,13 +1,34 @@
-<html>
-	<head>
-		<style>
-			p1 {color: #006347}
-			body {background-color: #002822}
-		</style>
-	</head>
-	<body>
-		<p1>
-			Well, this is awkward, well Wayback is still working...
-		</p>
-	</body>
+<!DOCTYPE html>
+<head>
+	<title>Home</title>
+		<div class="header">
+		<a href="/home" style="position: relative">
+		<img id="headerImage" src="Normal.png" alt="Home" width="144"height="48">
+		</a>
+	</div>
+	<script>
+		let currentDate = new Date();
+		let month = currentDate.getMonth() + 1;
+		let day = currentDate.getDate();
+
+		if (month === 10) { 
+			document.querySelector('body').style.background = '#2e0600';
+			document.querySelector('body').style.color = '#c74c00';
+			document.getElementById('headerImage').src = "Haloween.png";
+		} else if (month === 12) {
+			document.querySelector('body').style.background = '#001010';
+			document.querySelector('body').style.color = '#00d0d0';
+			document.getElementById('headerImage').src = "Christmas.png";			
+		} else {
+			document.querySelector('body').style.background = '#000317';
+			document.querySelector('body').style.color = '#006347';
+			document.getElementById('headerImage').src = "Normal.png";				
+		}
+	</script>
+</head>
+<body>
+	<p1>
+		Well, this is awkward, well Wayback is still working...
+	</p1>
+</body>
 </html>
