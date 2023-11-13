@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<head>
+		<title>TAoR OST</title>
+		<link rel="shortcut icon" href="Favicon-N.png">
+			<div class="header">
+				<a href="index.html" style="position: relative">
+					<img id="headerImage" src="Normal.png" alt="Home" width="72" height="24">
+				</a>
+				<a href="games.html" style="position: relative">
+					<img id="ci" src="Games.png" alt="Home" width="120" height="24">
+				</a>
+				<a href="music.html" style="position: relative">
+					<img id="ci" src="Music.png" alt="Music" width="192" height="24">
+				</a>
+				<a href="languages.html" style="position: relative">
+					<img id="ci" src="Conlangs.png" alt="Home" width="192" height="24">
+				</a>
+			</div>
+			<div class="sub-header">
+				<a href="LeofOrg.html" style="position: relative">
+					<img src="Leofo Logo.png" alt="Leofo OST" style="height:10; width:30%">
+				</a>
+				<a href="TAoR1.html" style="position: relative">
+					<img src="TAoR1 Logo.png" alt="TAoR1 OST" style="height:10; width:10%">
+				</a>
+				<a href="ASRS.html" style="position: relative">
+					<img src="ASRS Logo.png" alt="ASRS" style="height:10; width:40%">
+				</a>
+				<a href="Thorn.html" style="position: relative">
+					<img src="Thorn Logo.png" alt="Thorn OST" style="height:10; width:10%">
+				</a>
+		<script>
+			window.history.pushState({}, "", "/music/The-Adventures-of-Random/");
+			let currentDate = new Date();
+			let month = currentDate.getMonth() + 1;
+			let day = currentDate.getDate();
+	
+			if (month === 10) { 
+				document.querySelector('body').style.background = '#2e0600';
+				document.querySelector('body').style.color = '#c74c00';
+				document.getElementById('headerImage').src = "Haloween.png";
+				document.getElementById('gi').src = "Games_H.png";
+				document.getElementById('ci').src = "Conlangs_H.png";
+	
+			} else if (month === 12) {
+				document.querySelector('body').style.background = '#001010';
+				document.querySelector('body').style.color = '#00d0d0';
+				document.getElementById('headerImage').src = "Christmas.png";			
+			} else {
+				document.querySelector('body').style.background = '#000317';
+				document.querySelector('body').style.color = '#006347';
+				document.getElementById('headerImage').src = "Normal.png";				
+			}
+		</script>
+				<style>
+			a {
+			font-size: 24px;
+			text-decoration: none;
+			}
+			
+			h3 {
+			text-align: center
+			}
+			
+			p {
+			text-align: center;
+			font-size: 14px;
+			}
+			
+			.sub-header {
+			
+			}
+			</style>
+	</head>
+	<body>
+		<a href="@.html" style="font-size: 12px; color:#FFFFFF"> Um... Recreating this, I lost the link </a>
+	</body>
+</html>
